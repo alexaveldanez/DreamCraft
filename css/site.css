@@ -1,0 +1,38 @@
+main>.container {
+    padding: 60px 15px 0;
+}
+
+main>.container-fluid {
+    padding-top: 60px;
+}
+
+body > main {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.sticky-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100;
+}
+
+.mainText {
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(182, 170, 8);
+}
+
+.secondaryText {
+    color: rgb(4, 8, 75);
+}
+
+.phoneText {
+    color: white;
+    text-align: center;
+}
+
+.minHeight {
+    min-height: 80vh;
+}
