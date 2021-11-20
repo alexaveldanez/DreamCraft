@@ -6,9 +6,17 @@ main>.container-fluid {
     padding-top: 60px;
 }
 
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
 body > main {
     margin-top: 20px;
     margin-bottom: 60px;
+}
+
+footer {
+    background: #000336;
 }
 
 nav {
