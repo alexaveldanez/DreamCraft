@@ -10,6 +10,21 @@ body > main {
     margin-top: 20px;
     margin-bottom: 60px;
 }
+
+nav {
+    background: #000336;
+}
+
+.navLogo {
+    width: 225px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
 .sticky-nav {
     position: fixed;
     left: 0;
