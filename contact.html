@@ -50,19 +50,34 @@
 </nav>
 
     <main class="flex-shrink-0">
-        <div class="container text-center mt-5">
-            <h1>Contact Us</h1>
-            <hr>
-            <!-- <p>
-                Insert Contact Us Form with email notification feature.
-            </p>
-            <p>
-                Icons with links to email, phone, IG.
-            </p> -->
-            <p>
-                <h4>Call: (760)580-0865</h4>
-                <h4>Email: Dreamcraftlandscapeinc@gmail.com</h4>
-            </p>
+        <div class="container col-6">
+            <div class="text-center mt-5">
+                <h1>Contact Us</h1>
+                <p>
+                    Call: (760)580-0865 | Email: Dreamcraftlandscapeinc@gmail.com
+                </p>
+            </div>
+            <form class="row gy-3" name="ContactForm" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Phone Number">
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="Email Address">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Best Time To Call">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                </div>
+                <div data-netlify-recaptcha="ture"></div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button type="button" class="btn btn-primary btn-lg">Submit</button>
+                </div>
+            </form>
         </div>
     </main>
     <footer class="footer mt-auto py-3">
