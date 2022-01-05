@@ -1,43 +1,261 @@
-main>.container {
-    padding: 60px 15px 0;
+:root {
+    --blue: #000336;
+    --lightBlue: #0d6efd;
+    --gold: #FFD700;
 }
 
-main>.container-fluid {
-    padding-top: 60px;
+
+
+.navBarSection {
+   position: fixed;
+   left: 0;
+   top: 0px;
+   width: 100%;
+   box-sizing: border-box;
 }
 
-body {
-    font-family: 'Raleway', sans-serif;
+.socialMediaBar {
+    background-color: var(--gold);
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+    display: flex;
 }
 
-body > main {
-    margin-top: 20px;
-    margin-bottom: 60px;
+.socialMediaBar a {
+    color: var(--blue);
 }
 
-nav {
-    background: #000336;
+.socialMediaBar a:hover {
+    color:var(--lightBlue)
+}
+
+#socialMediaSection {
+    display: flex;
+    flex: row;
+    justify-content: end; 
+}
+
+#phoneIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#phoneIcon a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#navbar {
+    background-color: var(--blue);
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.navBarMenuSection {
+    display: flex;
+    justify-content: end;
+}
+
+.navBarMenu {
+    display: flex;
+    list-style: none;
+    color: white;
+    font-size: large;
+}
+
+.navBarMenu a {
+    color: white !important;
+    text-decoration: none;
+}
+
+.navBarMenu a:hover {
+    color: var(--gold) !important;
+}
+
+.main {
+    background-image: url(/img/firePit2.jpeg);
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 190px;
+}
+
+#socialMediaItems {
+    display: flex;
 }
 
 .navLogo {
-    width: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-
-.minHeight {
-    min-height: 80vh;
+.badgeSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 10px;
+    margin-right: 25px;
 }
 
-.carItems {
-    margin-bottom: 150px;
+#badgeIcon {
+    width: 75px;
 }
 
-.contactForm {
-    font-family: sans-serif;
+.mainSectionText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 250px;
+}
+
+.quoteBtn {
+    background-color: var(--blue);
+}
+
+.services {
+    background-color: var(--blue);
+    width: 100%;
+    max-width: 100%;
+}
+
+.services h3 {
+    margin-top: 200px;;
+}
+
+.image1 {
+    background-image: url(/img/patio.jpeg);
+    height: 500px;
+    max-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.image2 {
+    background-image: url(/img/driveway.jpeg);
+    height: 500px;
+    max-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image3 {
+    background-image: url(/img/wall.jpeg);
+    height: 500px;
+    max-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image4 {
+    background-image: url(/img/firePit1.jpeg);
+    height: 500px;
+    max-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about {
+    background-color: var(--blue);
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#about h3 {
+    letter-spacing: 3px;
+    border-bottom: 1px solid var(--gold);
+}
+
+hr {
+    height: 5px;
+    color: var(--gold);
+}
+
+.servicesList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactUs {
+    background-color: var(--blue);
+    padding-bottom: 100px;
+}
+
+#contactUs h3 {
+    letter-spacing: 3px;
+}
+
+.contactFormBtn {
+    background-color: var(--gold);
+    color: var(--blue);
+}
+
+@media (max-width: 500px) {
+    .navLogo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #navbarBrand img {
+        width: 300px;
+    }
+    .badgeSection {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    #badgeIcon {
+        width: 50px;
+    }
+    .navBarMenuSection {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 75px;
+    }
+    .navBarMenu a {
+        font-size: small;
+    }
+
+    .main {
+        width: 100%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-top: 250px;
+    }
+
+    .mainSectionText {
+        margin-top: 100px;
+    }
+
+    .image1 {
+        height: 350px;
+    }
+
+    .image2 {
+        height: 350px;
+    }
+
+    .image3 {
+        height: 350px;
+    }
+
+    .image4 {
+        height: 350px;
+    }
 }
